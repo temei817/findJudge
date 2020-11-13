@@ -7,9 +7,9 @@ public class townJudge{
 		int[] count = new int[n+1];
 		for(int i = 0; i < trust.length; i++)
 		{
-			int[] item = trust[i];
-			count[item[0]] = count[item[0]] - 1; //decrement because the judge doesn't trust anyone
-			count[item[1]] = count[item[1]] + 1; //increment because that person is trusted 
+			int[] person = trust[i];
+			count[person[0]] = count[person[0]] - 1; //decrement because the judge doesn't trust anyone
+			count[person[1]] = count[person[1]] + 1; //increment because that person is trusted 
 		}
 		for(int i = 1; i <= n; i++)
 		{
